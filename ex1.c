@@ -1,18 +1,19 @@
-#include<stduio.h>
-#include<cs50.h>
-int main(void){
+#include <stdio.h>
+
+int main() {
     int guess;
-    int secretNumber;
-printf("Guess a number between 1 and 5: ");
-scanf("%d", &guess);
+    int secretNumber; 
+    secretNumber = 3;
 
-if (guess == secretnumber) {
-  printf("right n\");
-}  
-else {
-  printf("wrong n\");
-} 
-  
+    printf("Guess a number between 1 and 5: ");
+    scanf("%d", &guess);
 
-  }
+    if (guess == secretNumber) {
+        printf("right number: %d\n", secretNumber);
+    } else {
+        printf("wrong number. The correct number was: %d\n", secretNumber);
+    }
+
+    return 0;
+}
 
